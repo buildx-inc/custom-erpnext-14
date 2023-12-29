@@ -40,7 +40,7 @@ class Project(Document):
 	def validate(self):
 		if not self.is_new():
 			self.copy_from_template()
-		self.send_welcome_email()
+		# self.send_welcome_email()
 		self.update_costing()
 		self.update_percent_complete()
 
